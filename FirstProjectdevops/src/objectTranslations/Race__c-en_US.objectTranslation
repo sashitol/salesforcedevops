@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Race</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Races</value>
+    </caseValues>
+    <fields>
+        <label><!-- race --></label>
+        <name>race__c</name>
+    </fields>
+    <fields>
+        <label><!-- racenum --></label>
+        <name>racenum__c</name>
+    </fields>
+    <layouts>
+        <layout>weblayout1</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- websdfds --></label>
+        <name>dsgfdgd</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- web --></label>
+        <name>web</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

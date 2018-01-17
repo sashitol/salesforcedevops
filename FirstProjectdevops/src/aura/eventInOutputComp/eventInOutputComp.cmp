@@ -1,0 +1,7 @@
+<aura:component >
+	    <aura:attribute name="text" type="String"/>
+    <aura:handler event="c.messgaeEvent" action="{!c.answerMessage}"/>
+    <div>
+    Message Recived :{!v.text};
+    </div>
+</aura:component>

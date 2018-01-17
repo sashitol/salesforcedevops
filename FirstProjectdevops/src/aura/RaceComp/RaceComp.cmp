@@ -1,0 +1,33 @@
+<aura:component >
+        <aura:attribute name="total" type="Double" default="10" />
+	    <aura:attribute name="raceNo" type="Integer" default="0" />
+	    <aura:attribute name="race" type="Race__c" />
+
+    <div class="row">
+        <center>
+            <table class="summaryPanel">
+                <tr >
+                    <td class="summaryCell">
+                        <div >
+                            <h3 class="itemTitle" >total</h3>
+                            <ui:outputNumber value="{!v.total}" format=".00"/>
+                        </div>
+                    </td>
+                    <td class="summaryCell">
+                        <div >
+                            <h3 class="itemTitle" >RaceNo</h3>
+                            <ui:outputNumber value="{!v.raceNo}"/>
+                        </div>
+                    </td>
+                    <td class="summaryCell">
+                        <div >
+                            <h3 class="itemTitle" >approved</h3>
+                            <ui:inputCheckbox value="{!v.race.siddhant__approved__c}" change="{!c.onApprovedValueChange}" />
+                        </div>
+                    </td>
+
+                </tr>           
+            </table>
+        </center>
+    </div>
+</aura:component>
