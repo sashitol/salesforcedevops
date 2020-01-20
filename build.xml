@@ -43,7 +43,7 @@
 	
 	<!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged -->
 	    <target name="MyDeploy">
-	      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="FirstProjectdevops"/>
+	      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="FirstProjectdevops/src"/>
 	    </target>
 
 	<!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged -->
