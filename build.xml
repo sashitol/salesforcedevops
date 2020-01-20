@@ -15,7 +15,8 @@
       <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" deployRoot="mypkg"/>
       <mkdir dir="retrieveOutput"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="retrieveOutput" packageNames="MyPkg"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="retrieveOutput" 
+		   packageNames="MyPkg"/>
     </target>
 
     <!-- Retrieve an unpackaged set of metadata from your org -->
@@ -23,7 +24,7 @@
     <target name="retrieveUnpackaged">
       <mkdir dir="retrieveUnpackaged"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="retrieveUnpackaged" unpackaged="src/package.xml"/>
+      <sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="retrieveUnpackaged" unpackaged="FirstProjectdevops/src/package.xml"/>
     </target>
 
     <!-- Retrieve all the items of a particular metadata type -->
